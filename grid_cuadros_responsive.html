@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Responsive</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1vw;
+    }
+    
+    .grid-item {
+      background-color: #e0e0e0;
+      padding: 2vw;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h2>Slot 1</h2>
+      <p>Contenido del Slot 1</p>
+    </div>
+    <div class="grid-item">
+      <h2>Slot 2</h2>
+      <p>Contenido del Slot 2</p>
+    </div>
+    <div class="grid-item">
+      <h2>Slot 3</h2>
+      <p>Contenido del Slot 3</p>
+    </div>
+    <div class="grid-item">
+      <h2>Slot 4</h2>
+      <p>Contenido del Slot 4</p>
+    </div>
+    <div class="grid-item">
+      <h2>Slot 5</h2>
+      <p>Contenido del Slot 5</p>
+    </div>
+  </div>
+</body>
+</html>
